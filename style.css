@@ -1,0 +1,168 @@
+:root{ /* :root = pseudo-classe é utilizada para selecionaro elemento raiz do documento HTML, ou seja,
+    o elemento HTML. Util para definir variáveis globais no CSS, que podem ser utilizadas em todo o docuemnto*/
+
+    --branco-principal: #FFFFFF;
+    --cinza-secudaro: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* { /*pega todos os elementos HTML e determina os estilos*/
+    margin: 0;
+    padding: 0;
+}
+
+.principal{
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;/* vh = view-heigh altura do dispositivo*/
+    display: grid; /* grid = vai separando os elementos da tela um do lado do outro, um embaixo do outro*/
+    grid-template-columns: 50% 50%; /* Com a definição de template como columns eu to ocupando o espaço
+    de colunas*/
+}
+
+.container__botao{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em; /* em=tamanhoda font */
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
+    color: black;
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cinza-secudaro);
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0; /* como se fosse um relógio 
+    margin topo: 1em; margin direita: 0; margin baixo: 2em; margin esquerda: 0*/
+
+}
+.container__caixa{
+    margin: 0 6em;
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto{
+    color: var(--cinza-secudaro);
+}
+
+.secundario__botao{
+    display: inline-block;/* inline = transformou esse elemento em linha ; 
+    block = quebra de linha do texto de cima*/
+    margin-top: 1em;
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 5em;
+}
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item{
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape__logo{
+    justify-content: center;
+    margin-top: 7em;
+}
+
+.rodape{
+    text-align: center;
+    
+
+}
+
+.rodape__texto{
+    color: var(--cinza-secudaro);
+    font-size: 14px;
+    margin: 1em 0 2em 0;
+}
+
+.lista__link{
+    font-size: 16px;
+    margin: 3em 0 2em 0;
+    display: inline-block;
+    padding: 1em;
+
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    
+}
+
+.lista__link a:hover{
+    color: var(--botao-azul);
+}
+
+.lista__link a:active{
+    color: purple;
+}
+
+
